@@ -54,7 +54,7 @@ class PessoaUpdateView(generics.UpdateAPIView):
     serializer_class = PessoaSearilizer
 
     def update(self, request, *args, **kwargs):
-        instance = self.get_object()
+        
         try:
         
             return super().update(request, *args, **kwargs)
